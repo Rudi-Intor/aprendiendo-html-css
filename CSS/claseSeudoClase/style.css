@@ -1,0 +1,34 @@
+
+
+.main-nav{
+    height: 25px;
+    margin-top: 10px;
+    list-style: none;/* Elimina los puntos de la lista */
+    padding-left:0;
+    background-color: aqua /* Color de fondo del contenedor principal */
+}
+
+.main-nav__item{
+    display: inline-block; /* Pone en horizontal los elementos de la lista */
+}
+
+.main-nav__item a{  /* al aagregar la a estamos siendo espesificos con la clase eso quiere decir que solo se aplicara a los <a> dentro de los elementos de la lista que estan en main-nav__item*/
+    color: white;
+    padding:5px;
+    border-radius: 15px;/* hace redondeado las esquinas */
+    text-decoration:none; /* Elimina el subrayado */
+    background-color: aquamarine;
+
+}
+
+.main-nav__item a:hover{ /* hover es un pseudo-clase que se activa al pasar el mouse sobre el elemento */
+    color: blue;
+
+}
+.main-nav__item a:active{ /* active es una pseudo-clase que se activa al hacer clic en el elemento */
+    color: red;
+}
+
+.main-nav__item a::after{/* after es una pseudo-elemento que se utiliza para agregar contenido después del elemento */
+    content:"|";
+}
